@@ -9,6 +9,8 @@ class Menu extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'price', 'description', 'image'];
+
     // Method for DB RELATIONSHIP(Category and Menu Tables)
     public function categories()
     {
